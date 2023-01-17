@@ -1,3 +1,5 @@
+# terminal command to run: rails sample_data
+
 task sample_data: :environment do
   p "Creating sample data"
 

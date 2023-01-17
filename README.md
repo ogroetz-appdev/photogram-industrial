@@ -304,7 +304,7 @@ follow_request.accepted! # sets status to "accepted" and saves
 We also get automatic positive and negative scopes:
 
 ```ruby
-FollowReqest.accepted
+FollowRequest.accepted
 current_user.received_follow_requests.not_rejected
 ```
 

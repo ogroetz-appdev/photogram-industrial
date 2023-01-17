@@ -12,7 +12,7 @@ class FollowRequest < ApplicationRecord
 # follow_request.accepted! # sets status to "accepted" and saves
 # We also get automatic positive and negative scopes:
 
-# FollowReqest.accepted
+# FollowRequest.accepted
 # current_user.received_follow_requests.not_rejected
 scope :accepted, -> { where(status: "accepted" ) }
 scope :not_accepted, -> { where.not(status: "accepted" ) }

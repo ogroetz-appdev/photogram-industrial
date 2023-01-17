@@ -14,4 +14,7 @@ class FollowRequest < ApplicationRecord
 
 # FollowReqest.accepted
 # current_user.received_follow_requests.not_rejected
+scope :accepted, -> { where(status: "accepted" ) }
+scope :not_accepted, -> { where.not(status: "accepted" ) }
+
 end
